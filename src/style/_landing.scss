@@ -1,0 +1,22 @@
+//STYLE
+.landing {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  &__header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $space;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__block {
+    display: block;
+  }
+
+}
