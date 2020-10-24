@@ -1,15 +1,14 @@
 import typescript from 'rollup-plugin-typescript2';
-import scss from 'rollup-plugin-scss'
 
 export default {
     input: './src/main.ts',
 
+    output: {
+      file: 'public/js/main.js',
+    },
+
     plugins: [
         typescript({ tsconfig: "tsconfig.json" }),
-        scss({
-            output: 'public/css/style.css',
-            include: 'src/style/**/*.scss',
-        }),
     ],
 
     watch: {

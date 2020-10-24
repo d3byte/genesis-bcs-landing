@@ -1,8 +1,8 @@
-import { parse } from 'qs';
 import { UtmParamsInterface } from "../interfaces/utm-params.interface";
+import {getUtmQueryParams} from "./get-utm-query-params.util";
 
 export function parseUtm(): UtmParamsInterface {
-    const params: any = parse(window.location.search, { ignoreQueryPrefix: true });
+    const params: any = getUtmQueryParams();
 
     const utmParams: UtmParamsInterface = {};
 

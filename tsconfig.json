@@ -4,7 +4,7 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "module": "es2020",
+    "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
@@ -17,7 +17,7 @@
       "dom"
     ],
     "baseUrl": "./src",
-    "outFile": "./public/js/main.js"
+    "outDir": "./public/js"
   },
   "exclude": ["node_modules"]
 }

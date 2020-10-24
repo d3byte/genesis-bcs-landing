@@ -1,3 +1,5 @@
+import './style/style.scss';
+
 import './utils/save-block.util';
 
 import { parseUtm } from "./utils/parse-utm.util";
