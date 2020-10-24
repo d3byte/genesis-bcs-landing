@@ -1,0 +1,22 @@
+.text {
+
+  &--overline {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &--title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 53px;
+    line-height: 62px;
+    margin: $space 0;
+  }
+}

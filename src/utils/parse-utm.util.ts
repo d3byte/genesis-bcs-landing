@@ -11,7 +11,7 @@ export function parseUtm(): UtmParamsInterface {
     }
 
     if (params.utm_term) {
-        utmParams.competenceLevel = utmParams.competenceLevel;
+        utmParams.competenceLevel = params.utm_term;
     }
 
     return utmParams;

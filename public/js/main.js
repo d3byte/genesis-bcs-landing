@@ -4,6 +4,14 @@ function getSavedBlocks() {
     return JSON.parse(localStorage.getItem(SAVED_BLOCKS_KEY) || '[]');
 }
 
+function saveBlock(blockId) {
+    const savedBlocks = [
+        ...getSavedBlocks(),
+        blockId,
+    ];
+    localStorage.setItem(SAVED_BLOCKS_KEY, JSON.stringify(savedBlocks));
+}
+
 function getUtmQueryParams() {
     const queryParams = window.location.href.split('?')[1];
     const paramsArray = queryParams.split('&');
@@ -23,7 +31,7 @@ function parseUtm() {
         utmParams.blocks = params.utm_content.split(',');
     }
     if (params.utm_term) {
-        utmParams.competenceLevel = utmParams.competenceLevel;
+        utmParams.competenceLevel = params.utm_term;
     }
     return utmParams;
 }

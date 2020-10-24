@@ -8,6 +8,8 @@
 
         <link rel="stylesheet" href="css/style.css">
 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -15,20 +17,54 @@
         <section class="landing">
 
             <header class="landing__header">
-
                 <img class="logo" src="img/logo.png">
 
-                <button class="button">
-                    Открыть счет
-                </button>
-
+                <button class="button">Открыть счет</button>
             </header>
 
-            <main id="blocks-container"></main>
+            <main class="landing__main" id="blocks-container">
+
+            </main>
 
         </section>
 
+        <article class="landing__block landing__block--with-markup" style="background: #012969; color: white;" id="i-want">
+            <p class="text text--overline">Я хочу</p>
+
+            <p class="text text--title">Вложиться в тикер</p>
+
+            <button class="button">Вложиться</button>
+        </article>
+
+        <article class="landing__block" id="about-stocks">
+            <img class="landing__block__img" src="img/about-stocks.png">
+        </article>
+
+        <article class="landing__block" id="how-works">
+            <img class="landing__block__img" src="img/how-works.png">
+        </article>
+
+        <article class="landing__block" id="why-now">
+            <img class="landing__block__img" src="img/why-now.png">
+        </article>
+
+        <article class="landing__block" id="where-invest">
+            <img class="landing__block__img" src="img/where-invest.png">
+            <button class="button landing__block__bg_action" onclick="handleWhereInvestAction()">Прочитать подробнее</button>
+        </article>
+
+        <article class="landing__block" id="why-us">
+            <img class="landing__block__img" src="img/why-us.png">
+        </article>
+
         <script src="js/main.js"></script>
+
+        <script>
+            function handleWhereInvestAction() {
+                saveBlock('where-invest');
+                window.location.href = 'https://bcspremier.ru/knowledge/basics/vo-chto-investirovat-dengi-v-2020-godu-chtoby-poluchat-passivnyj-dokhod/';
+            }
+        </script>
 
     </body>
 

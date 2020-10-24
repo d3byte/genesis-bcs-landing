@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "rollup:build": "rollup -c",
-    "rollup:dev": "rollup -c -w",
+    "rollup:dev": "rollup -c -w --no-treeshake",
     "build-w:scss": "node-sass-chokidar ./src/style -o ./public/css --watch",
     "boot:http-server": "http-server -p 4200 -a localhost -c-1",
     "dev": "run-p rollup:dev boot:http-server build-w:scss"

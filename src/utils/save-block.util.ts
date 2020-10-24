@@ -7,5 +7,5 @@ export function saveBlock(blockId: string): void {
         blockId,
     ];
 
-    localStorage.setItem(SAVED_BLOCKS_KEY, blockId);
+    localStorage.setItem(SAVED_BLOCKS_KEY, JSON.stringify(savedBlocks));
 }

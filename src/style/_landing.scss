@@ -10,13 +10,39 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: $space;
+    padding: $space $horizontal-space;
     width: 100%;
     box-sizing: border-box;
+    background: white;
+    z-index: 5;
+  }
+
+  &__main {
+    padding-top: 110px;
+
+    .landing__block {
+      display: block;
+    }
   }
 
   &__block {
-    display: block;
+    display: none;
+    position: relative;
+    padding: $space 0;
+
+    &__img {
+      width: 100%;
+    }
+
+    &--with-markup {
+      padding: $horizontal-space;
+    }
+
+    &__bg_action {
+      position: absolute;
+      bottom: $horizontal-space;
+      right: $horizontal-space;
+    }
   }
 
 }
