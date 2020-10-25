@@ -121,6 +121,17 @@
             <img class="landing__block__img" src="img/company-advantages.png">
         </article>
 
+        <article class="landing__block landing__block--with-markup" id="check-competence">
+            <div class="actions-row">
+
+                <div class="actions-row__wrapper">
+                    <button class="button actions-row__wrapper__button" onclick="handleToJunior()">Мне непонятно</button>
+                    <button class="button actions-row__wrapper__button" onclick="handleToSenior()">У меня есть опыт в инвестициях</button>
+                </div>
+
+            </div>
+        </article>
+
         <article class="landing__block landing__block--with-dividers-top" id="get-consultation">
             <img class="landing__block__img" src="img/steps.png">
             <button class="button landing__block__bg_action landing__block__bg_action--center landing__block__bg_action--bottom" onclick="handleGetConsultationAction()">Получить консультацию</button>
@@ -139,11 +150,18 @@
             }
 
             function handleGetConsultationAction() {
-
             }
 
             function handleAreInterestedInStocksAction() {
 
+            }
+
+            function handleToJunior() {
+                toJunior();
+            }
+
+            function handleToSenior() {
+                toSenior();
             }
         </script>
 

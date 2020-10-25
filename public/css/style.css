@@ -119,3 +119,10 @@ body {
         background: #012969; }
     .landing__block--no-padding {
       padding: 0; }
+
+.actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .actions-row__wrapper__button:first-child {
+    margin-right: 30px; }

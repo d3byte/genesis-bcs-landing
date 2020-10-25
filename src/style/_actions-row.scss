@@ -1,0 +1,14 @@
+.actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+
+    &__button {
+      &:first-child {
+        margin-right: $space;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 export function getUtmQueryParams(): any {
     const queryParams = window.location.href.split('?')[1];
-    const paramsArray = queryParams.split('&');
+    const paramsArray = (queryParams || '').split('&');
 
     const paramsObj: any = {};
 
