@@ -29,32 +29,101 @@
         </section>
 
         <article class="landing__block landing__block--with-markup" style="background: #012969; color: white;" id="i-want">
-            <p class="text text--overline">Я хочу</p>
+            <main>
 
-            <p class="text text--title">Вложиться в тикер</p>
+                <p class="text text--overline">Я хочу</p>
 
-            <button class="button">Вложиться</button>
+                <p class="text text--title">Увеличить пассивный доход</p>
+
+                <a href="#about-stocks">
+                    <button class="button">Изучить далее</button>
+                </a>
+
+            </main>
+
+            <img class="landing__block__action_img" src="img/dividend.png">
+        </article>
+
+        <article class="landing__block landing__block--with-markup" style="background: #012969; color: white;" id="i-want-tariff">
+            <main>
+
+                <p class="text text--overline">Я хочу</p>
+
+                <p class="text text--title">Гибкие тарифные планы</p>
+
+                <a href="#about-stocks">
+                    <button class="button">Изучить далее</button>
+                </a>
+
+            </main>
+
+            <img class="landing__block__action_img" src="img/dividend.png">
         </article>
 
         <article class="landing__block" id="about-stocks">
             <img class="landing__block__img" src="img/about-stocks.png">
         </article>
 
+        <article class="landing__block" id="about-bonds">
+            <img class="landing__block__img" src="img/about-bonds.png">
+        </article>
+
+        <article class="landing__block" id="about-ofz">
+            <img class="landing__block__img" src="img/about-ofz.png">
+        </article>
+
+        <article class="landing__block landing__block--with-dividers" id="are-interested-bonds">
+            <img class="landing__block__img" src="img/are-interested-bonds.png">
+            <button class="button landing__block__bg_action" onclick="handleAreInterestedInBondsAction()">Да, мне интересно</button>
+        </article>
+
+        <article class="landing__block landing__block--with-dividers" id="are-interested-stocks">
+            <img class="landing__block__img" src="img/are-interested-stocks.png">
+            <button class="button landing__block__bg_action" onclick="handleAreInterestedInStocksAction()">Да, мне интересно</button>
+        </article>
+
         <article class="landing__block" id="how-works">
             <img class="landing__block__img" src="img/how-works.png">
+        </article>
+
+        <article class="landing__block" id="dividends-trend">
+            <img class="landing__block__img" src="img/dividends-trend.png">
+        </article>
+
+        <article class="landing__block landing__block--with-dividers-bottom" id="dividends-trend-bd">
+            <img class="landing__block__img" src="img/dividends-trend.png">
         </article>
 
         <article class="landing__block" id="why-now">
             <img class="landing__block__img" src="img/why-now.png">
         </article>
 
-        <article class="landing__block" id="where-invest">
+        <article class="landing__block landing__block--with-dividers" id="where-invest">
             <img class="landing__block__img" src="img/where-invest.png">
             <button class="button landing__block__bg_action" onclick="handleWhereInvestAction()">Прочитать подробнее</button>
         </article>
 
-        <article class="landing__block" id="why-us">
+        <article class="landing__block landing__block--with-dividers-bottom" id="where-invest-bb">
+            <img class="landing__block__img" src="img/where-invest.png">
+            <button class="button landing__block__bg_action" onclick="handleWhereInvestAction()">Прочитать подробнее</button>
+        </article>
+
+        <article class="landing__block" id="where-invest-cl">
+            <img class="landing__block__img" src="img/where-invest.png">
+            <button class="button landing__block__bg_action" onclick="handleWhereInvestAction()">Прочитать подробнее</button>
+        </article>
+
+        <article class="landing__block landing__block--no-padding" id="why-us">
             <img class="landing__block__img" src="img/why-us.png">
+        </article>
+
+        <article class="landing__block landing__block--no-padding" id="company-advantages">
+            <img class="landing__block__img" src="img/company-advantages.png">
+        </article>
+
+        <article class="landing__block landing__block--with-dividers-top" id="get-consultation">
+            <img class="landing__block__img" src="img/steps.png">
+            <button class="button landing__block__bg_action landing__block__bg_action--center landing__block__bg_action--bottom" onclick="handleGetConsultationAction()">Получить консультацию</button>
         </article>
 
         <script src="js/main.js"></script>
@@ -63,6 +132,18 @@
             function handleWhereInvestAction() {
                 saveBlock('where-invest');
                 window.location.href = 'https://bcspremier.ru/knowledge/basics/vo-chto-investirovat-dengi-v-2020-godu-chtoby-poluchat-passivnyj-dokhod/';
+            }
+
+            function handleAreInterestedInBondsAction() {
+                saveBlock('are-interested-bonds');
+            }
+
+            function handleGetConsultationAction() {
+
+            }
+
+            function handleAreInterestedInStocksAction() {
+
             }
         </script>
 
